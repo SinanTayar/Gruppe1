@@ -46,7 +46,7 @@ class Forms (models.Model):
     def __str__(self):
         return self.id
 class AnswerVariants (models.Model):
-    id=models.IntegerField
+    id = models.IntegerField
     question_id = models.ForeignKey(Questions, on_delete=models.CASCADE)
-    answer= models.ForeignKey(Answers, on_delete=models.CASCADE)
+    answer = models.ForeignKey(Answers, on_delete=models.CASCADE)
 
